@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Il tuo profilo NerdBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Congiu">
+        <meta name="keywords" content="nerdbook">
+    </head>
+    <body>
+        <header>
+            <h1>Profilo</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>                
+            </ul>
+        </nav>
+        <div>
+        <form action="#" method="post">
+            <p>
+                <label for="nome"><b>Nome</b></label><br>
+                <input type="text" name="nome" id="nome" value="" />
+            </p>
+            <p>
+                <label for="cognome"><b>Cognome</b></label><br>
+                <input type="text" name="cognome" id="cognome" value="" />
+            </p>
+            <p>
+                <label for="immagine"><b>Immagine del profilo</b></label><br>
+                <input type="url" name="immagine" id="immagine" value="" />
+            </p>
+            <p>
+                <label for="frase"><b>Frase di presentazione</b></label><br>
+                <textarea rows="4" cols="20" id="frase" name="frase" >
+                </textarea>
+            </p>
+            <p>
+                <label for="data"><b>Data di nascita</b></label><br>
+                <input type="date" name="data" id="data" />
+            </p>
+            
+            <p>
+                <label for="pswd"><b>Password</b></label><br>
+                <input type="password" name="pswd" id="pswd" value="" />    
+            </p>
+            <p>
+                <label for="pswd"><b>Conferma password</b></label><br>
+                <input type="password" name="conferma" id="conferma" value="" />
+            </p>
+            <button type="submit">Invia</button>
+        </form>
+        </div>
+    </body>
+</html>
