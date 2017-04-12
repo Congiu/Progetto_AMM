@@ -13,6 +13,8 @@ header{
     min-width: 300px;
     margin: 0px;
     padding: 0px;
+    border-radius: 5px;
+    min-width: 280px;
 }
 
 header nav, header h1{
@@ -33,14 +35,14 @@ body{
 h1{
     margin-top: 0px;
     color: rgb(0,60,180);
-    font: 35px/40px "Trebuchet MS", Arial, sans-serif;
+    font: 45px/40px "Trebuchet MS", Arial, sans-serif;
     font-weight: bold;
     text-align: center;
 }
 
 h2{
     margin-top: 0px;
-    color: rgb(0,100,0);
+    color: rgb(0,30,100);
     font: 30px/40px "Trebuchet MS", Arial, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -61,13 +63,13 @@ h3{
 a:link{
     font-size: 20px;
     text-decoration: none;
-    color: #0000FF;
+    color: black;
 }
 
 a:visited{
     font-size: 20px;
     text-decoration: none;
-    color: #800080;
+    color: black;
 }
 
 a:hover{
@@ -89,12 +91,14 @@ textarea{
 #formLogin{
     background-color: rgb(111,111,111);
     width: 300px;
+    min-width: 280px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 10px;
     padding: 10px;
     box-shadow: 0px 3px 8px 3px rgba(0,82,255,.6),
                 0px 0px 0px 3px rgba(0,82,255,.6);
+    border-radius: 5px;
 }
 
 #formLogin label{
@@ -136,8 +140,8 @@ textarea{
     padding: 5px;
     margin: 15px;
     float: left;
-    /*width: 50%;
-    min-width: 300px;*/
+    border-radius: 5px;
+    min-width: 280px;
 }
 
 #formDatiPersonali label{
@@ -158,6 +162,8 @@ textarea{
     float: right;
     clear: right;    
     display: block;
+    resize: none;
+    padding-left: 5px;
 }
 
 #formDatiPersonali textarea:focus{
@@ -182,6 +188,7 @@ textarea{
     display: inline;
     float: right;
     display: block;
+    padding-left: 5px;
 }
 
 #formDatiPersonali input:focus{
@@ -216,18 +223,21 @@ textarea{
 }
 
 header img{
-    margin-left: auto;
+    margin-left: 42%;
     margin-top: 5px;
     margin-right: 5px;
 }
 
 li.active{
-    background-color: red;
+    background: rgb(0,155,255);
+    box-shadow: 0px 3px 8px 3px rgba(211,211,211,.4),
+                0px 0px 0px 3px rgba(211,211,211,.4);
 }
 
 #descrizione{
     background-color: rgb(111,111,111);
-    width: 40%;
+    width: 90%;
+    min-width: 280px;
     height: 100%;
     margin-top: 20px;
     margin-left: auto;
@@ -237,6 +247,7 @@ li.active{
     box-shadow: 0px 3px 8px 3px rgba(0,82,255,.6),
                 0px 0px 0px 3px rgba(0,82,255,.6);
     text-align: left;
+    border-radius: 5px;
 }
 
 #descrizione h2{
@@ -246,6 +257,7 @@ li.active{
 #sidebar{
     height: 100%;
     min-height: 300px;
+    min-width: 280px;
     background: rgb(111,111,111);
     border-radius: 5px;
     box-shadow: 0px 3px 8px 3px rgba(0,82,255,.6),
@@ -317,21 +329,127 @@ h4, h5{
     box-shadow: 0px 3px 8px 3px rgba(0,82,255,.6),
                 0px 0px 0px 3px rgba(0,82,255,.6);
 }
+#log{
+    float: right;
+    background: rgb(211,211,211);
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px 3px rgba(211,211,211,.6),
+                0px 0px 0px 3px rgba(211,211,211,.6);
+}
+#log a{
+    margin-left: auto;
+}
+#log img{
+   margin-right: 10%;
+}
 
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 1024px){
+    #formDatiPersonali{
+        width: 60%;
+        max-width: 762px;
+    }
+    #postimg{
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+    h1{
+        margin-right: 100%;
+    }
+    #postimg{
+        max-width: 350px;
+    }
     #formDatiPersonali, #posts, #sidebar{
         margin: 0px;
         padding: 0px;
         margin-top: 15px;
         padding-top: 5px;
-        width: 100%;
+        width: 96%;
     }
     #formDatiPersonali{
         height: 100%;
     }
-    #formDatiPersonali input, #formDatiPersonali textarea{
+    #formDatiPersonali input{
         margin:5px; 
-        width: 100%;
+        width: 96%;
+        border-radius: 22px;
+        
     }
-    
+    #formDatiPersonali input[type=submit]{
+        margin-bottom:5px;
+        margin-top: 5px;
+        width: 98%;
+    }
+    #formDatiPersonali textarea{
+        margin:5px;
+        width: 96%;
+        border-radius: 16px;
+        padding-left: 5px;
+    }
+    #descrizione{
+        width: 96%;
+    }
+    #nerdbook{
+        margin-left: 22%;
+    }
+    #log{
+    float: left;
+    }
+    #log a{
+        margin-left: 5px;
+    }
+    #log img{
+       margin-left: 5px;
+       margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    h1{
+        margin-right: 100%;
+    }
+    #formDatiPersonali, #posts, #sidebar{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 15px;
+        padding-top: 5px;
+        width: 96%;
+    }
+    #formDatiPersonali{
+        height: 100%;
+    }
+    #formDatiPersonali input{
+        margin:5px; 
+        width: 96%;
+        border-radius: 22px;
+        
+    }
+    #formDatiPersonali input[type=submit]{
+        margin-bottom:5px;
+        margin-top: 5px;
+        width: 98%;
+    }
+    #formDatiPersonali textarea{
+        margin:5px;
+        width: 96%;
+        border-radius: 16px;
+        padding-left: 5px;
+    }
+    #descrizione{
+        width: 96%;
+    }
+    #nerdbook{
+        margin-left: 22%;
+    }
+    #log{
+    float: left;
+    }
+    #log a{
+        margin-left: 5px;
+    }
+    #log img{
+       margin-left: 5px;
+       margin-right: 10%;
+    }
 }
