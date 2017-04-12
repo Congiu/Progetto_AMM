@@ -11,37 +11,53 @@
     </head>
     <body> 
         <header>
-            <h1>Bacheca</h1>
+            <h1>NerdBook</h1>
             <nav>
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="descrizione.html">Descrizione</a></li>               
+                    <li><a href="profilo.html">Profilo</a></li>
+                    <li class="active"><a href="bacheca.html">Bacheca</a></li>
+                    <li><a href="login.html">Logout</a></li>
                 </ul>
-        </nav>
+            </nav>
         </header>
-        <div>
-            <p>
-                <img title="profilo" alt="Foto di Serious Guy" src="../img/trollface.png" width="96" height="72"> Serious Guy 
-            </p>
-            <p>
-                dovrei dire qualcosa di serio..
-            </p>
+        <div id="sidebar">
+            <h3>Persone</h3>
+            <ul>
+                <li><img title="utente" alt="Foto di un utente" src="../img/pokerface.png" width="36" height="36">Poker Guy</li>
+                <li><img title="utente" alt="Foto di un utente" src="../img/trollface.png" width="36" height="36">Troll Guy</li>
+                <li><img title="utente" alt="Foto di un utente" src="../img/google.png" width="36" height="36">Smart Guy</li>
+            </ul>
+            <h3>Gruppi</h3>
+            <ul>
+                <li><img title="utente" alt="Foto di un utente" src="../img/poker.jpg" width="36" height="36">Poker</li>
+                <li><img title="utente" alt="Foto di un utente" src="../img/late.png" width="36" height="36">Ritardatari</li>
+            </ul>
         </div>
-        <div>
-            <p>
-                <img title="profilo" alt="Foto di Poker Guy" src="../img/pokerface.png" width="96" height="72">Poker Guy
-            </p>
-            <p>
-                <img title="profilo" alt="Foto di cani che giocano a poker" src="../img/poker.jpg" width="273" height="185">
-            </p>
-        </div>
-        <div>
-            <p>
-                <img title="profilo" alt="Foto di Guy" src="../img/google.png" width="96" height="72">uy
-            </p>
-            <p>
-                <a href="https://www.google.it/">Link</a>
-            </p>
+        <div id="posts">
+            <div class="post">
+                <h4>
+                    <img title="profilo" alt="Foto di Serious Guy" src="../img/trollface.png" width="96" height="72">Serious Guy 
+                </h4>
+                <h5>Dovrei dire qualcosa di serio..</h5>
+            </div>
+            <div class="post">
+                <div id="imgprofilo">
+                    <h4>
+                    <img title="profilo" alt="Foto di Poker Guy" src="../img/pokerface.png" width="96" height="72">Poker Guy
+                    </h4>
+                </div>
+                <div>
+                    <h5>Pic of the day</h5>
+                    <img id="postimg" title="immagine" alt="Foto di cani che giocano a poker" src="../img/poker.jpg" width="273" height="185">
+                </div>
+            </div>
+            <div class="post">
+                <h4>
+                    <img title="profilo" alt="Foto di Guy" src="../img/google.png" width="96" height="72">Smart Guy
+                </h4>
+                <h5>Ecco la soluzione a tutti i tuoi problemi</h5>
+                <a href="https://www.google.it/">Clicca qui</a>
+            </div>
         </div>
     </body>
 </html>
